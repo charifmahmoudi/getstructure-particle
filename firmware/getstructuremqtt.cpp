@@ -1,4 +1,4 @@
-#include "getstructure.h"
+#include "getstructure-particle.h"
 
 #if defined(ARDUINO)
 #include "Arduino.h"

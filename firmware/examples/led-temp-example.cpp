@@ -1,6 +1,6 @@
 // IMPORTANT: When including a library in a firmware app, a sub dir prefix is needed
 // before the particular .h file.
-#include "getstructure.h"
+#include "getstructure-particle/getstructure-particle.h"
 
 
 // The Photon's onboard LED.
