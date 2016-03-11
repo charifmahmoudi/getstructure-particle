@@ -11,7 +11,7 @@ bool ledValue = false;
 int lastUpdate = millis();
 
 // The initialization of your device
-GetStructure::Device photon("56e224fc43d06601004b7235", "47ebeddc-f494-43e7-96c1-454eb089b72e", "6e4b899104ac3b60017300bcf2155f27a6d25abbafe3d9010940ecaf3c821ce3");
+GetStructure::Device photon("YOUR-DEVICE-ID", "YOUR-ACCESS-KEY", "YOUR-ACCESS-SECRET");
 
 // Callback signature for GetStructure.io  subscriptions.
 void myCallback(JsonObject& command);
@@ -34,7 +34,7 @@ void setup() {
     pinMode(LED, OUTPUT);
     
     //you can create dynamicly devices using pointers
-    //photon = new GetStructure::Device("56e224fc43d06601004b7235", "47ebeddc-f494-43e7-96c1-454eb089b72e", "6e4b899104ac3b60017300bcf2155f27a6d25abbafe3d9010940ecaf3c821ce3");
+    //photon = new GetStructure::Device("aaaa", "bbbb", "cccc");
 	
 	//Connect the photon to GetStructure.io broker
 	photon.connect(myCallback);
