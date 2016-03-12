@@ -1,7 +1,7 @@
 {
-  "name": "getstructure-particle",
+  "name": "Structure-MQTT-device",
   "author": "Charif Mahmoudi <charif.mahmoudi.us@gmail.com>",
   "license": "MIT",
   "version": "0.0.1",
-  "description": "A library enabling the creation on <Device> object dedicated to the integration to GetStructure.io broker"
+  "description": "Enabling an MQTT comunicating <Device> object dedicated to the integration to Structure platform broker - http://app.getstructure.io/"
 }
