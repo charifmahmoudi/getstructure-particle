@@ -1,5 +1,5 @@
 
-#include "getstructure-particle/getstructure-particle.h"
+#include "Structure-MQTT-device/Structure-MQTT-device.h"
 
 
 // The Photon's onboard LED.
