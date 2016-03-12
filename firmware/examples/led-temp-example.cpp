@@ -1,5 +1,4 @@
-// IMPORTANT: When including a library in a firmware app, a sub dir prefix is needed
-// before the particular .h file.
+
 #include "getstructure-particle/getstructure-particle.h"
 
 
@@ -13,11 +12,11 @@ int lastUpdate = millis();
 // The initialization of your device
 GetStructure::Device photon("YOUR-DEVICE-ID", "YOUR-ACCESS-KEY", "YOUR-ACCESS-SECRET");
 
-// Callback signature for GetStructure.io  subscriptions.
+// Callback signature for Structure subscriptions.
 void myCallback(JsonObject& command);
 
-// Callback for GetStructure.io  subscriptions.
-// Receive Your JsonObject from GetStructure.io
+// Callback for Structure subscriptions.
+// Receive Your JsonObject from Structure
 void myCallback(JsonObject& command) {
 
     
@@ -36,7 +35,7 @@ void setup() {
     //you can create dynamicly devices using pointers
     //photon = new GetStructure::Device("aaaa", "bbbb", "cccc");
 	
-	//Connect the photon to GetStructure.io broker
+	//Connect the photon to Structure broker
 	photon.connect(myCallback);
 	Serial.println("Setup complete");
 }
