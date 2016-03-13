@@ -64,8 +64,11 @@ bool GetStructure::Device::isConnected(){
 	return client.isConnected();
 }
 bool GetStructure::Device::publish(JsonObject& payload){
+	// enables data format requered by structure plateform
+	JsonObject& data = jsonBuffer.createObject();
+	data["data"] = payload;
 	char buffer[300];
-    payload.printTo(buffer, sizeof(buffer));
+    data.printTo(buffer, sizeof(buffer));
 
     return client.publish(topicState, buffer);
 }
