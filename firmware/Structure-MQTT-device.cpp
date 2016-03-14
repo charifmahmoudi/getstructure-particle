@@ -65,6 +65,7 @@ bool GetStructure::Device::isConnected(){
 }
 bool GetStructure::Device::publish(JsonObject& payload){
 	// enables data format requered by structure plateform
+	StaticJsonBuffer<300> jsonBuffer;
 	JsonObject& data = jsonBuffer.createObject();
 	data["data"] = payload;
 	char buffer[300];
