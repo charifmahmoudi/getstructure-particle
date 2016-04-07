@@ -64,3 +64,15 @@ Thanks to GetStructure.io team for their free kits :D
 
 ## Questions ?
 Send me a tweet to @CharifUs :)
+
+## Trubleshoot
+
+### SparkJson missing
+```
+Structure-MQTT-device/Structure-MQTT-device.h:38:33: fatal error: SparkJson/SparkJson.h: No such file or directory
+ #include "SparkJson/SparkJson.h"
+```
+You need to add SPARKJSON library also from the community libraries to your project.
+
+
+
