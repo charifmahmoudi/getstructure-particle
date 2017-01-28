@@ -1,7 +1,0 @@
-{
-  "name": "Structure-MQTT-device",
-  "author": "Charif Mahmoudi <charif.mahmoudi.us@gmail.com>",
-  "license": "MIT",
-  "version": "0.0.1",
-  "description": "Enabling an MQTT comunicating <Device> object dedicated to the integration to Structure platform broker - http://app.getstructure.io/"
-}

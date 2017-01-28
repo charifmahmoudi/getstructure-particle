@@ -1,10 +1,10 @@
 # getstructure-particle
-A [Particle Builder](https://build.particle.io/build)  library for integration with [Structure](https://www.getstructure.io/)
+A [Particle Builder](https://build.particle.io/build)  library for integration with [Losant](https://www.losant.com/)
 
 ## About
 
-This library serves as a wrapper for the [MQTT library](https://github.com/hirotakaster/MQTT) for the integration with [Structure](https://www.getstructure.io/) Broker.
-It offers simplified methodes and an Device object to comunicate with [Structure](https://www.getstructure.io/)
+This library serves as a wrapper for the [MQTT library](https://github.com/hirotakaster/MQTT) for the integration with [Losant](https://www.losant.com/) Broker.
+It offers simplified methodes and an Device object to comunicate with [Losant](https://www.losant.com/)
 
 ## Getting started
 A [getting started](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-connect-particle-board-to-structure-0e624d) tutorial is availible at [Hackster.io](https://www.hackster.io/)
@@ -16,6 +16,7 @@ This  [getting started](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-
 ## Dependencies
 
 This library depends on the [SPARKJSON](https://github.com/menan/SparkJson) library that is availible as community library in the [Particle Builder](https://build.particle.io/build) 
+**v2 update** Library is added as depecdency using the new particle Libraries v2 feature
 
 ## Features
 
