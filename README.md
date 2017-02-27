@@ -4,10 +4,10 @@ A [Particle Builder](https://build.particle.io/build)  library for integration w
 ## About
 
 This library serves as a wrapper for the [MQTT library](https://github.com/hirotakaster/MQTT) for the integration with [Losant](https://www.losant.com/) Broker.
-It offers simplified methodes and an Device object to comunicate with [Losant](https://www.losant.com/)
+It offers simplified methods and an Device object to communicate with [Losant](https://www.losant.com/)
 
 ## Getting started
-A [getting started](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-connect-particle-board-to-structure-0e624d) tutorial is availible at [Hackster.io](https://www.hackster.io/)
+A [getting started](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-connect-particle-board-to-structure-0e624d) tutorial is available at [Hackster.io](https://www.hackster.io/)
 
 [https://www.hackster.io/charifmahmoudi/ez-device-lib-to-connect-particle-board-to-structure-0e624d](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-connect-particle-board-to-structure-0e624d)
 
@@ -15,8 +15,8 @@ This  [getting started](https://www.hackster.io/charifmahmoudi/ez-device-lib-to-
 
 ## Dependencies
 
-This library depends on the [SPARKJSON](https://github.com/menan/SparkJson) library that is availible as community library in the [Particle Builder](https://build.particle.io/build) 
-**v2 update** Library is added as depecdency using the new particle Libraries v2 feature
+This library depends on the [SPARKJSON](https://github.com/menan/SparkJson) library that is available as community library in the [Particle Builder](https://build.particle.io/build)
+**v2 update** Library is added as dependency using the new particle Libraries v2 feature
 
 ## Features
 
@@ -50,13 +50,13 @@ Just create your Json object and it send it for your to Structure application.
 StaticJsonBuffer<100> jsonBuffer;
 JsonObject& root = jsonBuffer.createObject();
 ...
-//Publish directly your JsonObject !!!  
+//Publish directly your JsonObject !!!
 photon.publish(root);
 ```
 
 
 
-Simplified Json-based push methode and callback
+Simplified Json-based push method and callback
 
 ## Thanks
 Thanks to Brandon Cannaday [@TheReddest](https://twitter.com/TheReddest) for his [Blog Article](https://www.getstructure.io/blog/how-to-connect-a-particle-photon-to-the-structure-iot-platform)
@@ -66,7 +66,7 @@ Thanks to GetStructure.io team for their free kits :D
 ## Questions ?
 Send me a tweet to @CharifUs :)
 
-## Trubleshoot
+## Troubleshoot
 
 ### SparkJson missing
 ```
