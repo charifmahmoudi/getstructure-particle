@@ -36,7 +36,7 @@
 
 
 #include "SparkJson/SparkJson.h"
-#define STRUCTURE_BROKER "broker.getstructure.io"
+#define STRUCTURE_BROKER "broker.losant.com"
 
 
 namespace GetStructure
@@ -104,9 +104,9 @@ namespace GetStructure
       String deviceId;
 	  String accessKey;
 	  String accessSecret;
-	  // Topic used to subscribe to Structure commands.
+	  // Topic used to subscribe to Losant commands.
       String topicCommand;
-	  // Topic used to publish state to Structure.
+	  // Topic used to publish state to Losant.
       String topicState;
 	  // MQTT client.
 	  GetStructure::MQTT client;

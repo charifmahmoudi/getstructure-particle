@@ -27,8 +27,8 @@ The getstructure-particle library offers multiples cool features:
 
 The callback method support directly JSon object. so you do not have to deal with boring char * and convert them by yourself.
 ```
-// Callback for Structure subscriptions.
-// Receive Your JsonObject from GetStructure.io
+// Callback for Losant subscriptions.
+// Receive Your JsonObject from Losant
 void myCallback(JsonObject& command) {
     // If the command's name is "toggle", flip the LED.
     if(String(command["name"].asString()).equals(String("toggle"))) {
@@ -37,15 +37,15 @@ void myCallback(JsonObject& command) {
     }
 }
 ```
-**Device** Object that associate a photon to the **Device** at [Structure](https://www.getstructure.io/)
+**Device** Object that associate a photon to the **Device** at [Losant](https://www.losant.com/)
 
-Is a wrapper for all the MQTT communication. It provides simply an object GetStructure::Device that you deal with. and it represents the devices on [Structure](https://www.getstructure.io/) application.
+Is a wrapper for all the MQTT communication. It provides simply an object GetStructure::Device that you deal with. and it represents the devices on [Losant](https://www.losant.com/) application.
 
 ```
 // The initialization of your device
 GetStructure::Device photon("YOUR-DEVICE-ID", "YOUR-ACCESS-KEY", "YOUR-ACCESS-SECRET");
 ```
-Just create your Json object and it send it for your to Structure application.
+Just create your Json object and it send it for your to Losant application.
 ```
 StaticJsonBuffer<100> jsonBuffer;
 JsonObject& root = jsonBuffer.createObject();
@@ -59,9 +59,9 @@ photon.publish(root);
 Simplified Json-based push method and callback
 
 ## Thanks
-Thanks to Brandon Cannaday [@TheReddest](https://twitter.com/TheReddest) for his [Blog Article](https://www.getstructure.io/blog/how-to-connect-a-particle-photon-to-the-structure-iot-platform)
+Thanks to Brandon Cannaday [@TheReddest](https://twitter.com/TheReddest) for his [Blog Article](https://www.losant.com/blog/how-to-connect-a-particle-photon-to-the-losant-iot-platform)
 
-Thanks to GetStructure.io team for their free kits :D
+Thanks to Losant.com team for their free kits :D
 
 ## Questions ?
 Send me a tweet to @CharifUs :)

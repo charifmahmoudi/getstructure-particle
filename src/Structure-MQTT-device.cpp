@@ -6,11 +6,11 @@
 GetStructure::Device::Device(char * deviceId, char * accessKey, char * accessSecret)
 {
     Serial.println("Initialization of the device");
- // Topic used to subscribe to Structure commands.
-topicCommand = String::format("structure/%s/command", deviceId);
+ // Topic used to subscribe to Losant commands.
+topicCommand = String::format("losant/%s/command", deviceId);
 
-// Topic used to publish state to Structure.
-topicState = String::format("structure/%s/state", deviceId);
+// Topic used to publish state to Losant.
+topicState = String::format("losant/%s/state", deviceId);
 this->deviceId = String(deviceId);
 this->accessKey = String(accessKey);
 this->accessSecret = String(accessSecret);
@@ -33,7 +33,7 @@ void GetStructure::Device::mqttQosCallback(unsigned int qos) {
 }
 
 
-// Connects to the Structure MQTT broker.
+// Connects to the Losant MQTT broker.
 void GetStructure::Device::connect(void (*callback)(JsonObject&)) {
     
     this->callback = callback;
@@ -55,7 +55,7 @@ bool GetStructure::Device::loop(){
 	if (!client.isConnected()) {
         connect(callback);
     }
-    
+
     // Loop the MQTT client.
     return client.loop();
 	
@@ -64,7 +64,7 @@ bool GetStructure::Device::isConnected(){
 	return client.isConnected();
 }
 bool GetStructure::Device::publish(JsonObject& payload){
-	// enables data format required by structure plateform
+	// enables data format required by Losant plateform
 	StaticJsonBuffer<300> jsonBuffer;
 	JsonObject& data = jsonBuffer.createObject();
 	data["data"] = payload;
