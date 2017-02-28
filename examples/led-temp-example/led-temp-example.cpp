@@ -12,11 +12,11 @@ int lastUpdate = millis();
 // The initialization of your device
 GetStructure::Device photon("YOUR-DEVICE-ID", "YOUR-ACCESS-KEY", "YOUR-ACCESS-SECRET");
 
-// Callback signature for Structure subscriptions.
+// Callback signature for Losant subscriptions.
 void myCallback(JsonObject& command);
 
-// Callback for Structure subscriptions.
-// Receive Your JsonObject from Structure
+// Callback for Losant subscriptions.
+// Receive Your JsonObject from Losant
 void myCallback(JsonObject& command) {
 
     
@@ -35,7 +35,7 @@ void setup() {
     //you can create dynamicly devices using pointers
     //photon = new GetStructure::Device("aaaa", "bbbb", "cccc");
 	
-	//Connect the photon to Structure broker
+	//Connect the photon to Losant broker
 	photon.connect(myCallback);
 	Serial.println("Setup complete");
 }
